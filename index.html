@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
+
 </head>
 <body>
     
@@ -30,6 +31,26 @@
         </nav>
     </header>
 
+    <section class="first">
+        <div class="search-div">
+            <h1>Find Your Dream Job Here!</h1>
+            <div>
+                <input type="text" placeholder="keyword(e.g., Software Developer)">
+                <input type="text" placeholder="Location (e.g., City, State)">
+                <button class="flex items-center gap-2 px-6 py-2 text-white text-lg font-semibold rounded-lg shadow-md bg-gradient-to-r from-purple-500 to-pink-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z" />
+                    </svg>
+                    Search
+                </button>
+            </div>
+        </div>
+        <div class="first-img">
+            <img src="first-img.png" alt="">
+        </div>
+    </section>
+
+
 
 
     <!-- FOOTER -->
@@ -52,18 +73,25 @@
                     <li>Address: 123 Job St, Career City, 12345</li>
                 </ul>
             </div>
+            
             <div class="follow-us">
-               <span><i class="fa-brands fa-facebook-f"></i></span>
-               <span><i class="fa-brands fa-linkedin-in"></i></span>
-               <span><i class="fa-brands fa-instagram"></i></span> 
+                <h2>Follow Us</h2>
+                <div>
+                    <span><i class="fa-brands fa-facebook-f"></i></span>
+                    <span><i class="fa-brands fa-linkedin-in"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                </div> 
             </div>
         </div>
         <div class="fd2">
             <div class="copy">
-                <span>&#169; 2025 Job Portal. All rights reserved.</span>
-                <span>Terms & Conditions | Privacy Policy</span>
+                <div>&#169; 2025 Job Portal. All rights reserved.</div>
+
+                <div>Terms & Conditions | Privacy Policy</div>
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
