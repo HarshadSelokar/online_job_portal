@@ -3,170 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>JobPortal</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 
 </head>
 <body>
-    
+    <!-- Header -->
     <header>
-        <nav class="navbar">
-            <div class="nav-div">
-                <div class="div">
-                    <a class="icon-text" href="#">Job Portal</a>
-                </div>
-                <div class="nav-pages">
-                    <a href="#Home">Home</a>
-                    <a href="#job_listings">Job Listings</a>
-                    <a href="#aboutus">About Us</a>
-                    <a href="#contact">Contact Us</a>
-                </div>
-                <div class="div">
-                    <a href="#login">
-                        <i class="fa-regular fa-user"></i>   Login / Register
-                    </a>
-                </div>
+        <div class="container header-container">
+            <div class="logo">JobPortal</div>
+            <nav class="nav-menu">
+                <a href="#">Home</a>
+                <a href="#">Job Listings</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+            </nav>
+            <div class="search-login">
+                <a href="#" class="login-btn"><i class="fa-regular fa-user"></i> Login / Register</a>
             </div>
-        </nav>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </header>
 
-    <section class="first">
-        <div class="search-div">
-            <h1>Find Your Dream Job Here!</h1>
-            <div>
-                <input type="text" placeholder="keyword(e.g., Software Developer)">
-                <input type="text" placeholder="Location (e.g., City, State)">
-                <button class="flex items-center gap-2 px-6 py-2 text-white text-lg font-semibold rounded-lg shadow-md bg-gradient-to-r from-purple-500 to-pink-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 3 10.5a7.5 7.5 0 0 0 13.65 6.15z" />
-                    </svg>
-                    Search
-                </button>
-            </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-close">
+            <button id="close-mobile-menu">
+                <i class="fas fa-times"></i>
+            </button>
         </div>
-        <div class="first-img">
-            <img src="first-img.png" alt="">
+        <nav class="mobile-nav">
+            <a href="#">Home</a>
+            <a href="#">Job Listings</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#"><i class="fa-regular fa-user" id=""></i>Login / Register</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Find Your Dream Job Here!</h1>
+                <div class="search-box">
+                    <input type="text" placeholder="Keywords (e.g., Software Developer)">
+                    <input type="text" placeholder="Location (e.g., City, State)">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="first-img.png" alt="">
+            </div>
         </div>
     </section>
 
-
-
-
-    <section class="container">
-        <!-- Featured Job Categories -->
-        <section class="featured">
-            <h2>Featured Job Categories</h2>
-            <div class="categories">
-                <div class="category">
-                    <i class="fas fa-laptop-code"></i>
-                    <span>IT & Software</span>
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Featured Job Categories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="category-name">IT & Software</div>
                 </div>
-                <div class="category">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <span>Education</span>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="category-name">Education</div>
                 </div>
-                <div class="category">
-                    <i class="fas fa-user-md"></i>
-                    <span>Healthcare</span>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="category-name">Healthcare</div>
                 </div>
-                <div class="category">
-                    <i class="fas fa-bullhorn"></i>
-                    <span>Marketing</span>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="category-name">Marketing</div>
                 </div>
-                <div class="category">
-                    <i class="fas fa-shopping-cart"></i>
-                    <span>Sales</span>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="category-name">Sales</div>
                 </div>
-                <div class="category">
-                    <i class="fas fa-tools"></i>
-                    <span>Engineering</span>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="category-name">Engineering</div>
                 </div>
             </div>
-        </section>
-
-        <!-- Recent Job Postings -->
-        <section class="jobs">
-            <h2>Recent Job Postings</h2>
-            <div class="job-list">
-                <div class="job-card">
-                    <h3><i class="fas fa-code"></i> Software Engineer</h3>
-                    <p class="company"><i class="fas fa-building"></i> TechCorp</p>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
-                    <div class="tags">
-                        <span class="tag full-time">Full-Time</span>
-                        <span class="tag remote">Remote</span>
-                    </div>
-                    <button class="details-btn">View Details</button>
-                </div>
-
-                <div class="job-card">
-                    <h3><i class="fas fa-bullhorn"></i> Marketing Manager</h3>
-                    <p class="company"><i class="fas fa-building"></i> GrowthCo</p>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> New York, NY</p>
-                    <div class="tags">
-                        <span class="tag full-time">Full-Time</span>
-                        <span class="tag on-site">On-site</span>
-                    </div>
-                    <button class="details-btn">View Details</button>
-                </div>
-
-                <div class="job-card">
-                    <h3><i class="fas fa-database"></i> Data Scientist</h3>
-                    <p class="company"><i class="fas fa-building"></i> DataTech</p>
-                    <p class="location"><i class="fas fa-map-marker-alt"></i> Boston, MA</p>
-                    <div class="tags">
-                        <span class="tag contract">Contract</span>
-                        <span class="tag remote">Remote</span>
-                    </div>
-                    <button class="details-btn">View Details</button>
-                </div>
-            </div>
-        </section>
+        </div>
     </section>
 
+    <!-- Job Listings Section -->
+    <section class="job-listings">
+        <div class="container">
+            <h2 class="section-title">Recent Job Postings</h2>
+            <div class="job-grid">
+                <div class="job-card">
+                    <h3 class="job-title">Software Engineer</h3>
+                    <div class="company-name">TechCorp</div>
+                    <div class="job-location">San Francisco, CA</div>
+                    <div class="job-tags">
+                        <span class="job-tag">Full-Time</span>
+                        <span class="job-tag">Remote</span>
+                    </div>
+                    <a href="#" class="view-job">View Details</a>
+                </div>
+                <div class="job-card">
+                    <h3 class="job-title">Marketing Manager</h3>
+                    <div class="company-name">GrowthCo</div>
+                    <div class="job-location">New York, NY</div>
+                    <div class="job-tags">
+                        <span class="job-tag">Full-Time</span>
+                        <span class="job-tag">On-site</span>
+                    </div>
+                    <a href="#" class="view-job">View Details</a>
+                </div>
+                <div class="job-card">
+                    <h3 class="job-title">Data Scientist</h3>
+                    <div class="company-name">DataTech</div>
+                    <div class="job-location">Boston, MA</div>
+                    <div class="job-tags">
+                        <span class="job-tag">Contract</span>
+                        <span class="job-tag">Remote</span>
+                    </div>
+                    <a href="#" class="view-job">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Hire Talent Section -->
+    <section class="hire-talent">
+        <div class="container">
+            <h2>Hire the Best Talent Quickly!</h2>
+            <p>Post your job listings and connect with top professionals in your industry.</p>
+            <button class="post-job-btn">Post a Job Now</button>
+        </div>
+    </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Alice Johnson</div>
+                        <div class="testimonial-position">Software Developer</div>
+                    </div>
+                    <p class="testimonial-text">I found my dream job through this portal. The process was smooth and efficient!</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Bob Smith</div>
+                        <div class="testimonial-position">HR Manager</div>
+                    </div>
+                    <p class="testimonial-text">As an employer, I've had great success finding qualified candidates here.</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-info">
+                        <div class="testimonial-name">Carol Williams</div>
+                        <div class="testimonial-position">Marketing Specialist</div>
+                    </div>
+                    <p class="testimonial-text">The job search features are intuitive and helped me find relevant opportunities quickly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- FOOTER -->
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="process-title">Register</h3>
+                    <p class="process-description">Create your account</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="process-title">Search Jobs</h3>
+                    <p class="process-description">Find the perfect opportunity</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="process-title">Apply & Get Hired</h3>
+                    <p class="process-description">Submit your application and succeed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Sections -->
+    <section class="for-sections">
+        <div class="for-sections-div">
+            <div class="for-job-seekers">
+                <h3 class="for-title">For Job Seekers</h3>
+                <p class="for-description">Create your profile and start your job search today!</p>
+                <a href="#" class="for-button">Register Now</a>
+            </div>
+            <div class="for-employers">
+                <h3 class="for-title">For Employers</h3>
+                <p class="for-description">Post your job and find top talent!</p>
+                <a href="#" class="for-button">Post a Job</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="newsletter-title">Stay Updated</h2>
+            <p class="newsletter-description">Subscribe to our newsletter for the latest job opportunities and career tips.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <div class="fd1">
-            <div class="quick_links">
-                <h2>Quick Links</h2>
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Job Listings</li>
-                    <li>Contact Us</li>
-                </ul>
+        <div class="container">
+            <div class="footer-container">
+                <div class="quick-links footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Job Listings</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> Email: info@jobportal.com</p>
+                    <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Address: 123 Job St, Career City, 12345</p>
+                </div>
+                <div class="social-media">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="Contact-info">
-                <h2>Contact Info</h2>
-                <ul>
-                    <li>Email: info@jobportal.com</li>
-                    <li>Phone: (123) 123-456</li>
-                    <li>Address: 123 Job St, Career City, 12345</li>
-                </ul>
+            <div class="copyright">
+                <p>&copy; 2023 JobPortal. All rights reserved.</p>
             </div>
-            
-            <div class="follow-us">
-                <h2>Follow Us</h2>
-                <div>
-                    <span><i class="fa-brands fa-facebook-f"></i></span>
-                    <span><i class="fa-brands fa-linkedin-in"></i></span>
-                    <span><i class="fa-brands fa-instagram"></i></span>
-                </div> 
-            </div>
-        </div>
-        <div class="fd2">
-            <div class="copy">
-                <div>&#169; 2025 Job Portal. All rights reserved.</div>
-
-                <div>Terms & Conditions | Privacy Policy</div>
+            <div class="footer-links-bottom">
+                <a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a>
             </div>
         </div>
     </footer>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
 </body>
 </html>
