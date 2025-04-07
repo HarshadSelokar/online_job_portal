@@ -65,11 +65,7 @@ Server will start at `http://localhost:3000`
 | `/apply-job/:id` | POST | Apply for a job |
 | `/my-applications` | GET | View applied jobs |
 
-## 🎨 UI Preview
-(Add screenshots or GIFs of your UI here)
 
-## 📜 License
-This project is licensed under the **MIT License**.
 
 ---
 🚀 **Developed by [Your Name]**  
