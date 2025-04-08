@@ -71,3 +71,22 @@ Server will start at `http://localhost:3000`
 🚀 **Developed by [Your Name]**  
 💻 **GitHub:** [Your Profile](https://github.com/your-username/)
 
+
+
+
+## Files Structures 
+
+- job-portal/
+- │── backend/        # Node.js backend (Already built)
+- │── frontend/       # Frontend files
+- │   ├── index.html  # Home page
+- │   ├── login.html  # Login page
+- │   ├── register.html  # Registration page
+- │   ├── jobs.html   # Job listings
+- │   ├── apply.html  # Job application page
+- │   ├── css/
+- │   │   ├── styles.css  # Main stylesheet
+- │   ├── js/
+- │   │   ├── auth.js     # Login/Register script (Included in HTML file)
+- │   │   ├── jobs.js     # Job listing script (Included in HTML file)
+- │   │   ├── apply.js    # Job application script (Included in HTML file)

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Available Jobs</h2>
+    <div id="job-list"></div>
+    <script>
+
+document.addEventListener("DOMContentLoaded", async () => {
+    const jobList = document.getElementById("job-list");
+    
+    const response = await fetch("http://localhost:3000/jobs/get-jobs");
+    const jobs = await response.json();
+
+    jobs.forEach(job => {
+        const jobItem = document.createElement("div");
+        jobItem.classList.add("job");
+        jobItem.innerHTML = `
+            <h3>${job.title}</h3>
+            <p>${job.description}</p>
+            <p><strong>Location:</strong> ${job.location}</p>
+            <button onclick="applyForJob(${job.id})">Apply</button>
+        `;
+        jobList.appendChild(jobItem);
+    });
+});
+
+function applyForJob(jobId) {
+    const userId = localStorage.getItem("userId");
+    if (!userId) {
+        alert("Please log in to apply for a job.");
+        return;
+    }
+
+    fetch("http://localhost:3000/applications/apply-job", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ job_id: jobId, job_seeker_id: userId }),
+    })
+    .then(res => res.json())
+    .then(data => alert(data.message));
+}
+
+    </script>
+</body>
+</html>
