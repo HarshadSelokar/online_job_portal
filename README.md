@@ -68,8 +68,8 @@ Server will start at `http://localhost:3000`
 
 
 ---
-🚀 **Developed by [Your Name]**  
-💻 **GitHub:** [Your Profile](https://github.com/your-username/)
+🚀 **Developed by Harshad Selokar**  
+
 
 
 
